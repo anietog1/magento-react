@@ -1,4 +1,4 @@
-define(['./hooks/useObservable'], function (useObservable) {
+define(['./hooks/useObservable'], (useObservable) => {
     return {
         useObservable,
     };

@@ -1,4 +1,4 @@
-define(['react'], function ({ useReducer, useCallback, useEffect }) {
+define(['react'], ({ useReducer, useCallback, useEffect }) => {
     const ACTIONS = {
         UPDATE_STATE: 0,
         UPDATE_OBSERVABLE: 1,

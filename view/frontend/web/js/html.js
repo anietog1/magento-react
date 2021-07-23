@@ -1,3 +1,3 @@
-define(['react', 'htm'], function (React, htm) {
+define(['react', 'htm'], (React, htm) => {
     return htm.bind(React.createElement);
 });
