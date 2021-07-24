@@ -7,7 +7,7 @@ define(['react'], ({ useReducer, useCallback, useEffect }) => {
     const reducer = (state, action) => {
         switch (action.type) {
             case ACTIONS.UPDATE_STATE:
-                return action.observable();
+                return action.value;
             case ACTIONS.UPDATE_OBSERVABLE:
                 action.observable(action.value);
                 return action.value;
@@ -23,8 +23,8 @@ define(['react'], ({ useReducer, useCallback, useEffect }) => {
         );
 
         useEffect(() => {
-            const subscription = observable.subscribe(() => {
-                dispatch({ type: ACTIONS.UPDATE_STATE, observable });
+            const subscription = observable.subscribe((value) => {
+                dispatch({ type: ACTIONS.UPDATE_STATE, value });
             });
             return () => subscription.dispose();
         }, [observable]);
