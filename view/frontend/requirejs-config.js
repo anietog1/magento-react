@@ -2,6 +2,7 @@ const config = {
     map: {
         '*': {
             html: 'Agusquiw_React/js/html',
+            reactComponent: 'Agusquiw_React/js/widgets/reactComponent',
         },
     },
     paths: {
