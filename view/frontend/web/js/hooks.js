@@ -1,11 +1,6 @@
-define(['./hooks/useForcedUpdate', './hooks/useObservable', './hooks/useTranslation'], (
-    useForcedUpdate,
-    useObservable,
-    useTranslation
-) => {
+define(['./hooks/useForcedUpdate', './hooks/useObservable'], (useForcedUpdate, useObservable) => {
     return {
         useForcedUpdate,
         useObservable,
-        useTranslation,
     };
 });

@@ -6,7 +6,7 @@ define(['react'], ({ useCallback, useState }) => {
      */
     const useForcedUpdate = () => {
         const [counter, setCounter] = useState(0);
-        const forceUpdate = useCallback(() => setCounter(increase), []);
+        const forceUpdate = useCallback(() => setCounter(increase));
         return forceUpdate;
     };
 
