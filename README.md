@@ -40,19 +40,18 @@ To ease the use of React and avoid the necessity of compilation, this extension 
 
 This extension puts some hooks in place, which are in charge of comunicating with Magento.
 
+## useForcedUpdate
+
+Force the update of the component calling the `forceUpdate` function. It can be passed down to other components or even shared anywhere else.
+
+```javascript
+const forceUpdate = useForcedUpdate();
+```
+
 ## useObservable
 
 Syncs a react state with an observable.
 
 ```javascript
 const [cartData, setCartData] = useObservable(customerData.get('cart-data'));
-```
-
-## useTranslation
-
-Translates text and avoids multiple calculations. It may not be so useful, since it's a hook instead of a function; that issue should be revisited.
-
-```javascript
-const translation = useTranslation('Hello %1!', ['world']);
-const translation = useTranslation('Hello %who!', { who: 'world' });
 ```
