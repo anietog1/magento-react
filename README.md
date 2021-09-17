@@ -25,13 +25,13 @@ React components can be added to phtml templates using the custom widget `reactC
 ```javascript
 <div
     data-mage-init='{
-    "reactComponent": {
-        "component": "Agusquiw_ReactDemo/js/components/Counter",
-        "props": { 
-            "initialValue": 0
+        "reactComponent": {
+            "component": "Agusquiw_ReactDemo/js/components/Counter",
+            "props": { 
+                "initialValue": 0
+            }
         }
-    }
-}'
+    }'
 ></div>
 ```
 
