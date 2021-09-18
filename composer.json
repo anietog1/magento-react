@@ -1,5 +1,5 @@
 {
-    "name": "agusquiw/react",
+    "name": "agusquiw/module-react",
     "description": "Use React in Magento",
     "type": "magento2-module",
     "version": "1.0.0",

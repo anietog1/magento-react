@@ -7,11 +7,13 @@ React components can be created using normal JS. For example:
 define(['react', 'html'], ({ useState, useCallback, useEffect }, html) => {
     const Counter = (props) => {
         const [count, setCount] = useState(props.initialValue || 0);
-        const increaseCount = useCallback(() => setCount((count) => count + 1), []);
+        const decreaseCount = useCallback(() => setCount((count) => count - 1));
+        const increaseCount = useCallback(() => setCount((count) => count + 1));
         return html`
             <div>
+                <button onClick=${decreaseCount}>Decrease</button>
                 <span>${count}</span>
-                <button onClick=${increaseCount}>Click me!</button>
+                <button onClick=${increaseCount}>Increase</button>
             </div>
         `;
     };
@@ -34,6 +36,10 @@ React components can be added to phtml templates using the custom widget `reactC
     }'
 ></div>
 ```
+
+It would produce an output similar to:
+
+![Gif of React in Magento](./assets/react-in-magento.gif)
 
 # Htm instead of JSX
 
