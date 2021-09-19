@@ -64,7 +64,15 @@ const forceUpdate = useForcedUpdate();
 Syncs a React state with an observable.
 
 ```javascript
-const [cartData, setCartData] = useObservable(customerData.get('cart-data'));
+const [cartData, setCartData, getCartData] = useObservable(customerData.get('cart-data'));
+```
+
+## useSharedState
+
+Hook for sharing state between multiple React components.
+
+```javascript
+const [state, setState, getState] = useSharedState('state', 0);
 ```
 
 # Event bus

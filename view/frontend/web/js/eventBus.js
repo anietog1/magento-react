@@ -1,20 +1,20 @@
 define(['ko'], (ko) => {
     const events = {};
 
-    const subscribe = (event, callback) => {
-        if (!events[event]) {
-            events[event] = ko.observable().extend({ notify: 'always' });
+    const subscribe = (eventName, callback) => {
+        if (!events[eventName]) {
+            events[eventName] = ko.observable().extend({ notify: 'always' });
         }
 
-        const subscription = events[event].subscribe(callback);
+        const subscription = events[eventName].subscribe(callback);
 
         return {
             dispose: subscription.dispose,
         };
     };
 
-    const publish = (event, data) => {
-        events[event](data);
+    const publish = (eventName, data) => {
+        events[eventName](data);
     };
 
     return {
