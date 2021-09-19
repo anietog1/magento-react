@@ -67,10 +67,16 @@ Syncs a React state with an observable.
 const [cartData, setCartData] = useObservable(customerData.get('cart-data'));
 ```
 
+# Event bus
+
+Since multiple unrelated components are going to be rendered, a communication system is required between them.
+`Agusquiw_React/js/eventBus` offers such a service.
+
 # Roadmap and pending features
 
--   Event bus or communication system between unrelated components.
--   Switch between react-development and react-production builds based on Magento Admin configuration.
+- Switch between react-development and react-production builds based on Magento Admin configuration.
+- Useful templates and blocks to avoid boilerplate code.
+- API query system and hooks, similar to apollo graphql but not necessarily with graphql.
 
 # Contributing
 

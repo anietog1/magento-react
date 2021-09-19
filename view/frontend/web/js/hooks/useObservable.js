@@ -9,7 +9,7 @@ define(['react'], ({ useCallback, useEffect, useState }) => {
                 setValue(value);
             });
 
-            return () => subscription.dispose();
+            return subscription.dispose;
         }, [observable]);
 
         return [value, setState, getState];
