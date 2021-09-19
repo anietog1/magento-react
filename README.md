@@ -74,9 +74,9 @@ Since multiple unrelated components are going to be rendered, a communication sy
 
 # Roadmap and pending features
 
-- Switch between react-development and react-production builds based on Magento Admin configuration.
-- Useful templates and blocks to avoid boilerplate code.
-- API query system and hooks, similar to apollo graphql but not necessarily with graphql.
+-   Switch between react-development and react-production builds based on Magento Admin configuration.
+-   Useful templates and blocks to avoid boilerplate code.
+-   API query system and hooks, similar to apollo graphql but not necessarily with graphql.
 
 # Contributing
 
